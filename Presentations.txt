@@ -1,0 +1,5 @@
+
+
+Bu katmanda farklý teklonojiler ile uygulama geliþtiriz. Mobile, Web, Desktop, API, SOAP Services, Micro Services gibi farklý uygulama tekloonojileri bu katmanda yer alýr. Biz bu katmanda NEt COre Web  API ile restful service geliþtiriceðiz.
+
+// Bu katmanda NEt Core MVX tasatrým deseni kullanýlacaýtýr Ve uygulamaya ait veriler json formatýnda Front end uygulamasý tasarlanacaktýr.

@@ -1,0 +1,16 @@
+
+Bu katmanda diðer katmanlar alt yapu hizmeti sunacak olan servislerimi barýndarýcaðýmýz katman.
+
+// Email , Sms, JWT ile Token haberleþme alt yapýsý, Bildirim Servisleri, Socket (SignalR), chat,
+realtime(eþ zamanlý) veri operasyonlarý için kullanýlýyo, cache iþlemleri gibi uygulamamýz için gerekli tüm alt yapý servislerinin baðlantýlarýný bu katmanda yapacaðýz
+
+// Hubs => Socket iþlemelerini bu klasör altýnda yaoacaðýz (SignalR) ile
+// Emaill => E-posta gönderme iþlemlerini bu klasörde yapýcaz
+// Notifacation => Mobil uygulama içib bildirim gönderme iþlemerini bu klasörde yapýca 
+// Sms => Sms iþlemelerini bu klasörede yapýcaz.
+// JWT => Client ile Server arasýnda haberleþme altyapýsýný bu klasörde tutucaðuz.
+// Cache => Redis ile cache'lenmiþ yani belirli bir süreliðine ramda tutulan bilgileri bu klasör altýndaki servisleri kullanarak geliþtiriceðiz
+// Logs => Loglama iþlemleri
+// Base Repository Implemantasyonlarý teknolojilere göre burda yapýladcka.
+
+// BU uygulama altýnda yukaridaki tüm operasyonlara ait interfaceler ve bu interfacelerden imlemente olan sýnýflarýmýz altyapý servþslerimi bulunacak

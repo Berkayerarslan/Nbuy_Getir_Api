@@ -1,0 +1,14 @@
+
+										DOMAÝN LAYER
+										
+Domain Layer: Uygulamadaki Entityleri, Domain Servicelerin, Eventlerin ve Repository INterfacelerinin bulunduðu katmandýr. Uygulamanýn en önemli ikatmaný olup tüm diðer katmanlar bu katman beslenir bu katmandaki sýnýflarý kullanabilir. Bu katman "Core" katmaný dýþýnda hiçbir katmana direk baðlý deðildir.
+
+
+		Logic iþlemlerini Domain Servisler üstlenecektir.
+
+// Ayný adna bir sipariþ içerisinde ayný üründen 10 adetten fazla sipariþ edilmesin
+// belirli bir adet üzerinden tek seferde sipariþ verilemesin
+// Gece 12 den sonraki sipariþler için sipariþ sýraya alýnsýn, bir sonraki gün gönderim yapýlsun
+// Kampanya tarihi son 12 saat kala kampanya sonlanmasý ile alakalý müþterilere mail gönderilsin
+// Stoktaki ürün adeti kritik ürün eþiðine yani (10) adet düþtüðü anda ilgili ürünlerin satýþý kitlensin
+// Sipariþi oluþtururken kritik stok yeterli mi deðil mi kontorlü yapan bir servis tanýmlayacaðuz.

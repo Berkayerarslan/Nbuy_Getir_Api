@@ -1,0 +1,3 @@
+﻿
+
+Her uygulamada kkullanabilcepimiz yardımcı (helper) dediğimiz yapıları içerisinde barındıran herhangi bir teklonoji kaygısı olmayan, bütün katmanlar ile haberleşebilen(cross-cutting-layer) bir katmandı. Genelde içerisinde String, Datetime Configuration gibi bir çok yardımcı method ve sınıf barındırır.

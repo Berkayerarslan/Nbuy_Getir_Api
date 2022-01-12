@@ -1,0 +1,22 @@
+
+
+// Bu katmada controllerden gelen iþ isteklerinin kordinasyonunu yönetimini yaoan katman olup, bu katmandaki application servisler ile uygulamanýn diðer katmanlardaki servisler bu katman içerisinde birbirleri ile haberleþir. Yani bu katmanýn görevi gelen iþ isteklerinin (use-case) kullaným durumlarýna göre arka planda ne tür iþlemlerin çaðýrlacaðýný koordine etmektir.
+
+// Controller => GetCampaignProducts => arka plandaki tüm kampanyalý ürünlerin düzgün bir logic'de listelenmesi içib gereken tüm servislerin çaðrýlmasýný bu katman saðlayacak.
+
+// Son 10 sipariþimi getir. GetTop10LAstestOrderRequest => Dto yani data tranfer objesi döndürecek 
+
+// {"name":"sipariþ adý","date":"sipariþ tarihi"} gibi
+
+// Bu katmanda gelen iþ isteðine göre verinin yani Input Modelin doðru formatta olup olmadýðý validasyonu, doðru formatta ise yapýladcak olan iþlemlerin çaðrýlmasý - ilgili servis çaðrýlarý- bu operasyonlar sonrasý yapýlacak iþlemler, mail at, sms at, bildirim gönder vs gibi operasyonlarýn yönetimi saðlancaktýr.
+
+Services => Gelen iþ isteklerini Requesttleri yakalayan ve iþleyen servislerimiz
+DTO => FrontEnd tarafýndan gelen modeller veya front en projesine gönderdiðimiz modeller
+Commands => Uygulama içerisine gelen iþ isteklerini temsil eden komut sýnýflarý (PostRequest)
+Queries => Uygulama içerisindeki nesneleri FrontEnd tarafýnda göndermekten sorumlu istek sýnýflasý (GetRequest)
+
+Exceptions => Uygulamanýn diðer katmanlara eriþmeden önceki hata durum yönetimleri için bu klasöredki sýnýflarý kullanacaðýz. UserNotAllowi ORderREjeceted
+
+// Bu katmanda controller içerisin yazýlan kodlarý temsil eden katmanýmýzdýr.
+
+Not: Bu katmaný kullanýlmasdaki en büyük sebep uygulamanýn teklonojisini yani API teklolnojisin deðiþmesi durumunda kodlarýmýzýn yeni gelen teklonojisini yani API teklonojisinin deðiþmesi durumunda kodlarýmýzýn yeni gelen teklonojiye aktarýlmasýn daha kolay olmasý Yani Apý tarafýnda uygulama tarafýnda bir teklonoji deðiþiminde hýzlý bir geççiþ-migration saðlayacaðýz.
